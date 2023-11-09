@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat Event</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <div class="backbutton">
+      <a href="#" id="backbttn"><i data-feather="arrow-left"></i></a>
+    </div>
+
+    <div class="header">
+      <h1>Buat Event</h1>
+    </div>
+
+    <div class="container">
+      <div class="inputName">
+        <label for="Desc">Event Name</label>
+        <input type="text" name="EventName" required />
+      </div>
+
+      <div class="inputDate">
+        <label for="Desc">Date</label>
+        <input type="date" name="Date" required />
+      </div>
+
+      <div class="inputDesc">
+        <label for="Desc">Description</label>
+        <input type="text" name="Desc" required />
+      </div>
+
+      <div class="inputLink">
+        <label for="Desc">Link</label>
+        <input type="link" name="Link" required />
+      </div>
+
+      <div class="submit">
+        <label for="Desc"></label>
+        <input type="submit" name="submit" value="Create" />
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

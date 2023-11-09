@@ -1,0 +1,85 @@
+:root {
+  --primary: #abc9ff;
+  --secondary: #ffdede;
+}
+
+body {
+  font-family: "Oswald";
+  background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0%;
+}
+
+/* Navbar */
+
+.box {
+  border-radius: 10px;
+  background-color: var(--primary);
+  padding: 0.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+}
+
+.circle {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.box2 {
+  border-radius: 10px;
+  background-color: var(--primary);
+  box-shadow: 0 0 10px black;
+  padding: 5rem;
+  height: 5%;
+  margin: 5%;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menubar {
+  position: absolute;
+  top: 10%;
+  left: -100%;
+  margin-left: 5%;
+  background-color: #abc9ff;
+  width: 15rem;
+  height: 50vh;
+  transition: 0.3s;
+}
+
+.menubar.active {
+  left: 0%;
+}
+
+.menubar a {
+  display: block;
+}
+
+.searchbox {
+  background-color: #ffdede;
+  border-radius: 50px;
+  height: 2rem;
+}
+
+.searchbar {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-right: 0.5rem;
+}
