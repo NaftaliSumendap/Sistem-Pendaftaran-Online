@@ -1,11 +1,13 @@
 :root {
-  --primary: #abc9ff;
-  --secondary: #ffdede;
+  --primary: #8c522d;
+  --secondary: #c16804;
+  --third: #d3b49f;
+  --text: #421404;
 }
 
 body {
   font-family: "Oswald";
-  background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: var(--secondary);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -18,6 +20,7 @@ body {
   border-radius: 10px;
   background-color: var(--primary);
   padding: 0.5rem;
+  margin-top: 1rem;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 1rem;
@@ -47,17 +50,19 @@ body {
 }
 
 .content-box {
+  color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .menubar {
+  color: var(--text);
   position: absolute;
-  top: 10%;
+  top: 6.5%;
   left: -100%;
   margin-left: 5%;
-  background-color: #abc9ff;
+  background-color: var(--primary);
   width: 15rem;
   height: 50vh;
   transition: 0.3s;
@@ -71,15 +76,6 @@ body {
   display: block;
 }
 
-.searchbox {
-  background-color: #ffdede;
-  border-radius: 50px;
-  height: 2rem;
-}
-
-.searchbar {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  margin-right: 0.5rem;
+.obj {
+  color: var(--text);
 }
