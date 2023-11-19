@@ -23,6 +23,7 @@ $users = query("SELECT * FROM users");
     <main>
         <div>
             <h1>Daftar User</h1>
+            <a href="tambah.php">Tambah data user</a>
         </div>
         <div>
             <table border="1" cellpading="10" cellspacing="0">
@@ -41,7 +42,7 @@ $users = query("SELECT * FROM users");
                         <td><?= $i; ?></td>
                         <td>
                             <a href="">Update</a> |
-                            <a href="">Delete</a>
+                            <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('Konfirmasi hapus?');">Delete</a>
                         </td>
                         <td><?= $row["id"]; ?></td>
                         <td><?= $row["nama"]; ?></td>

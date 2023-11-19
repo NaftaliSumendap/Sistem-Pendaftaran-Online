@@ -30,16 +30,16 @@
         <p>
           <label for="email">Email:</label>
           <input type="text" placeholder="Enter Your E-mail" name="email" id="email" required><br>
-        <p>
+        </p>
         <p>
           <label for="password">Password:</label>
           <input type="password" placeholder="Enter Your Password" name="pass" id="pass" required><br>
-        <p>
+        </p>
         <p>
           <label for="re-password">Repeat Password:</label>
           <input type="password" placeholder="Re-enter Your Password" name="re-pass" id="re-pass" required><br>
-        <p>
-          <input id="myButton" type="submit" name="submit" onclick="myFunction()" value="Submit">
+        </p>
+        <input id="myButton" type="submit" name="submit" onclick="myFunction()" value="Submit">
         <div>
           <a href="../index.php" class="log-in">Log in</a>
         </div>

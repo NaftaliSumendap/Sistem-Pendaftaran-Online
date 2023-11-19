@@ -12,3 +12,22 @@ function query($query)
     }
     return $rows;
 }
+
+function tambah($data)
+{
+    global $conn;
+    $nama = htmlspecialchars($data["nama"]);
+    $nomor = htmlspecialchars($data["nomor"]);
+    $email = htmlspecialchars($data["email"]);
+    $query = "INSERT INTO users VALUES (null,'$nama', '$nomor', '$email', null)";
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows(($conn));
+}
+
+function hapus($id)
+{
+    global $conn;
+    mysqli_query($conn, "DELETE FROM users WHERE id=$id");
+    return mysqli_affected_rows($conn);
+}
