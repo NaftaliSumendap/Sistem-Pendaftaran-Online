@@ -1,0 +1,86 @@
+#container{
+    width: 360px;
+    background: white;
+    margin:180px auto;
+    padding: 30px 20px;
+    border-radius: 6px;
+}
+
+:root {
+    --primary: #abc9ff;
+  }
+  
+  body {
+    font-family: "Oswald";
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/852/804/non_2x/abstract-blue-background-simple-design-for-your-website-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    font-family: "Oswald", serif;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 80%; /* Perbesar container */
+    margin: 0 auto; /* Pusatkan container secara horizontal */
+  }
+  
+  h2 {
+    color: #333; /* Warna teks hitam */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input {
+    width: 90%;
+    padding: 8px; /* Ukuran padding yang lebih kecil */
+    margin: 5px 0; /* Menyusun input dengan margin yang lebih baik */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Ukuran font yang lebih kecil */
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  @media screen and (max-width: 360px) {
+    /* Stil CSS khusus untuk layar mobile dengan lebar maksimum 360px */
+    .login-container {
+      max-width: 100%;
+      padding: 10px;
+      width: 100%; /* Atur lebar container ke 100% */
+    }
+  }
