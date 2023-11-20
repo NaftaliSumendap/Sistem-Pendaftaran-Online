@@ -41,7 +41,7 @@ $users = query("SELECT * FROM users");
                     <tr>
                         <td><?= $i; ?></td>
                         <td>
-                            <a href="">Update</a> |
+                            <a href="ubah.php?id=<?= $row["id"]; ?>">Update</a> |
                             <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('Konfirmasi hapus?');">Delete</a>
                         </td>
                         <td><?= $row["id"]; ?></td>
