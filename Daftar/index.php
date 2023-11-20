@@ -1,3 +1,16 @@
+<?php
+require '../SCRIPT/functions.php';
+if (isset($_POST["submit"])) {
+  if (register($_POST) > 0) {
+    echo "<script>
+          alert('Berhasil mendaftar');
+          </script>";
+  } else {
+    echo mysqli_error($conn);
+  }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +33,8 @@
     <div>
       <form action="#" id="form-pinjam" method="POST">
         <p>
-          <label for="nama">Nama:</label>
-          <input type="text" name="nama" id="nama" placeholder="Enter Your Name" required />
+          <label for="nama">Username:</label>
+          <input type="text" name="nama" id="nama" placeholder="Enter Your Username" required />
         </p>
         <p>
           <label for="nomor">Nomor:</label>
@@ -32,11 +45,11 @@
           <input type="text" placeholder="Enter Your E-mail" name="email" id="email" required><br>
         </p>
         <p>
-          <label for="password">Password:</label>
+          <label for="pass">Password:</label>
           <input type="password" placeholder="Enter Your Password" name="pass" id="pass" required><br>
         </p>
         <p>
-          <label for="re-password">Repeat Password:</label>
+          <label for="re-pass">Repeat Password:</label>
           <input type="password" placeholder="Re-enter Your Password" name="re-pass" id="re-pass" required><br>
         </p>
         <input id="myButton" type="submit" name="submit" onclick="myFunction()" value="Submit">

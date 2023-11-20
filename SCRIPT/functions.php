@@ -44,3 +44,33 @@ function ubah($data)
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }
+
+function register($data)
+{
+    global $conn;
+    $username = strtolower(stripslashes($data["nama"]));
+    $nomor = htmlspecialchars($data["nomor"]);
+    $email = htmlspecialchars($data["email"]);
+    $password = mysqli_real_escape_string($conn, $data["pass"]);
+    $password2 = mysqli_real_escape_string($conn, $data["re-pass"]);
+
+    $result = mysqli_query($conn, "SELECT nama FROM users WHERE nama='$username'");
+    if (mysqli_fetch_assoc($result)) {
+        echo "<script>
+            alert('Username telah digunakan');
+            </script>";
+        return false;
+    }
+
+    if ($password !== $password2) {
+        echo "<script>
+            alert('Password tidak sesuai!');
+            </script>";
+        return false;
+    }
+
+    $password = password_hash($password, PASSWORD_DEFAULT);
+    $query = "INSERT INTO users VALUES(null, '$username', $nomor, '$email', '$password')";
+    mysqli_query($conn, $query);
+    return mysqli_affected_rows($conn);
+}

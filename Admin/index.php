@@ -26,6 +26,9 @@ $users = query("SELECT * FROM users");
             <a href="tambah.php">Tambah data user</a>
         </div>
         <div>
+            <!-- <form action="" method="post">
+                <input type="text" name="search" size="10"><button type="submit" name="cari">Cari</button>
+            </form> -->
             <table border="1" cellpading="10" cellspacing="0">
                 <tr>
                     <th>No.</th>

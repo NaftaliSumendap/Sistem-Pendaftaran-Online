@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
     <script src="https://unpkg.com/feather-icons"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pendaftaran</title>
+    <title>Tambah Data</title>
     <link rel="stylesheet" href="../Daftar/style.css" />
     <script src="SCRIPT/script.js"></script>
 </head>
