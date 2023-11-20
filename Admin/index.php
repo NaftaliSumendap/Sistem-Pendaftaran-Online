@@ -14,7 +14,7 @@ $users = query("SELECT * FROM users");
     <script src="https://unpkg.com/feather-icons"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pendaftaran</title>
+    <title>List User</title>
     <link rel="stylesheet" href="style.css" />
     <script src="SCRIPT/script.js"></script>
 </head>
